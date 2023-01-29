@@ -1,5 +1,9 @@
+<div  class="h100 bg-fondo d-flex flex-column justify-content-center">
+  <h2 class="text-center text-light"> Hola, Soy <span>Vladimir Aguacunchi</span>.</h2>
+  <h2 class="text-center text-light">Soy desarrollador de software</h2>
+</div>
 <!-- nav bar -->
-<nav class="navbar navbar-expand-lg bg-dark">
+<!-- <nav class="navbar navbar-expand-lg bg-dark">
   <div class="container-fluid">
     <button
       class="navbar-toggler"
@@ -36,9 +40,13 @@
       </ul>
     </div>
   </div>
-</nav>
+</nav> -->
 
 <!-- about -->
+<div class="mt-5 pt-5">
+  <h2 class="text-center">SOBRE MÍ <span class="d-flex justify-content-center"><hr class="w5"></span> </h2>
+  
+</div>
 
 <div class="container-fluid p-5">
   <div class="row">
@@ -205,55 +213,19 @@
 <div class="container-fluid p-5 bg-hueso">
   <!-- Proyectos contenedor -->
   <div class="container-sm">
-    <h2 class="text-center">PROYECTOS</h2>
+    <h2 class="text-center">PROYECTOS <span class="d-flex justify-content-center"><hr class="w10"></span> </h2>
     <div class="row p-5">
       <!-- Proyecto -->
       <div class="col-md-4 p-0">
-        <figure>
-          <img src="/assets/hero.jpg" alt="" />
-          <div class="capa">
-            <h4>
-              Reportes Compras Públicas EEASA
-              <br />
-              <span>Angular / Spring / Oracle</span>
-            </h4>
-            <button
-              type="button"
-              class="btn btn-outline-danger"
-              (click)="openModalCarrusel('holla')"
-            >
-              Aprender más
-            </button>
-          </div>
-        </figure>
+        <app-tarjeta-component [dato]="tarjetas[0]"></app-tarjeta-component>
       </div>
       <!-- Proyecto  -->
       <div class="col-md-4 p-0">
-        <figure>
-          <img src="/assets/hero.jpg" alt="" />
-          <div class="capa">
-            <h4>
-              Generador de reportes Cal060 - SisDat EEASA
-              <br />
-              <span>Angular / Spring / Oracle</span>
-            </h4>
-            <button type="button" class="btn btn-outline-danger">Danger</button>
-          </div>
-        </figure>
-      </div>
+        <app-tarjeta-component [dato]="tarjetas[1]"></app-tarjeta-component>
+      </div>      
       <!-- Proyecto -->
       <div class="col-md-4 p-0">
-        <figure>
-          <img src="/assets/hero.jpg" alt="" />
-          <div class="capa">
-            <h4>
-              Fortunella
-              <br />
-              <span>React / Firebase</span>
-            </h4>
-            <button type="button" class="btn btn-outline-danger">Danger</button>
-          </div>
-        </figure>
+        <app-tarjeta-component [dato]="tarjetas[2]"></app-tarjeta-component>
       </div>
     </div>
   </div>

@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-import { ModalDismissReasons, NgbModal } from '@ng-bootstrap/ng-bootstrap';
-import { CarruselComponentComponent } from './componentes/carrusel-component/carrusel-component.component';
 
 @Component({
   selector: 'app-root',
@@ -8,19 +6,33 @@ import { CarruselComponentComponent } from './componentes/carrusel-component/car
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'portafolio2';
-  constructor (private modalService: NgbModal){
+  title = 'Vladimir Aguacunchix';
+
+  tarjetas:any=[
+    {
+      titulo:'Reportes Intranet',
+      tecnologias:['Angular','Spring','Oracle'],
+      imagen:'/assets/hero.jpg',
+      id:0
+    },
+    {
+      titulo:'Sistema de gestión ARCERNNR',
+      tecnologias:['Angular','Java','Oracle'],
+      imagen:'/assets/hero.jpg',
+      id:1
+    },
+    {
+      titulo:'Fortunella App',
+      tecnologias:['React','Firebase'],
+      imagen:'/assets/fortunella6.webp',
+      id:2
+    }
+  ]
+
+  constructor (){
 
   }
 
-  openModalCarrusel(tarjeta:any) {
-    const activeModal= this.modalService.open(CarruselComponentComponent, {
-      centered: true,
-      size: 'lg',
-      backdrop: true,
-      keyboard: false,
-    });
-    activeModal.componentInstance.tarjeta = tarjeta;
-  }
+  
 
 }

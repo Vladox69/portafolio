@@ -1,1 +1,11 @@
-<p>tarjeta-component works!</p>
+<figure>
+  <img src="{{dato['imagen']}}" alt="" />
+  <div class="capa">
+    <h4>
+      {{dato['titulo']}}
+      <br />
+      <span *ngFor="let tecnologia of dato['tecnologias']">{{tecnologia}} / </span>
+    </h4>
+    <button type="button" class="btn btn-outline-danger" (click)="openModalCarrusel(dato['id'])">Aprender más</button>
+  </div>
+</figure>

@@ -1,7 +1,10 @@
 .bg-hueso {
     background-color: #f5f5f5;
   }
-  
+
+.bg-fondo{
+  background-color: #1b242f;
+}  
   figure {
     position: relative;
     height: 300px;
@@ -50,3 +53,14 @@
   font-weight: lighter;
   }
   
+  .h100{
+    height:100vh; 
+  }
+
+  .w10{
+    width: 10%;
+  }
+
+  .w5{
+    width: 5%;
+  }
