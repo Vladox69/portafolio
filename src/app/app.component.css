@@ -3,8 +3,13 @@
   }
 
 .bg-fondo{
+  background-color: #252934;
+}  
+
+.bg-fondo-oscuro{
   background-color: #1b242f;
 }  
+
   figure {
     position: relative;
     height: 300px;
@@ -63,4 +68,9 @@
 
   .w5{
     width: 5%;
+  }
+
+  .circular-image{
+    width: 250px;
+    height: 350px;
   }

@@ -1,6 +1,6 @@
 <div  class="h100 bg-fondo d-flex flex-column justify-content-center">
-  <h2 class="text-center text-light"> Hola, Soy <span>Vladimir Aguacunchi</span>.</h2>
-  <h2 class="text-center text-light">Soy desarrollador de software</h2>
+  <h2 class="text-center text-light"> Hola, Soy <span class="text-danger fw-bold">Vladimir Aguacunchi</span>.</h2>
+  <h2 class="text-center text-light">Desarrollador de software</h2>
 </div>
 <!-- nav bar -->
 <!-- <nav class="navbar navbar-expand-lg bg-dark">
@@ -45,7 +45,6 @@
 <!-- about -->
 <div class="mt-5 pt-5">
   <h2 class="text-center">SOBRE MÍ <span class="d-flex justify-content-center"><hr class="w5"></span> </h2>
-  
 </div>
 
 <div class="container-fluid p-5">
@@ -53,15 +52,16 @@
     <div class="col-md-1"></div>
     <div class="col-md-5">
       <div class="container">
-        <div class="row">
-          <img src="/assets/hero.jpg" alt="" />
+        <div class="row ">
+            <div class="d-flex justify-content-center">
+              <img class="circular-image" src="/assets/VladimirA.jpeg" alt="" />
+            </div>
         </div>
         <div class="row">
-          <h3 class="text-center">Who's this guy?</h3>
+          <h3 class="text-center">Quién es Vladimir?</h3>
           <p class="text-center">
-            I'm a Front-End Developer for ChowNow in Los Angeles, CA. I have
-            serious passion for UI effects, animations and creating intuitive,
-            dynamic user experiences. Let's make something special.
+            Soy estudiante de ingeniería en Software de Ambato, Ecuador. 
+            Me apasiona el desarrollo frontend y las animaciones.
           </p>
         </div>
       </div>
@@ -229,4 +229,31 @@
       </div>
     </div>
   </div>
+</div>
+
+<div class="container-fluid bg-fondo d-flex flex-column align-items-center">
+  <div class="mt-4 pt-4">
+    <h2 class="text-center text-light">CONTACTAME <span class="d-flex justify-content-center"><hr class="w-50"></span> </h2>
+  </div>
+  <form action="" class="w-25">
+    <div class="mb-2 ">
+      <label for="exampleFormControlInput1" class="form-label text-light">Email</label>
+      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+    </div>
+    <div class="mb-2 ">
+      <label for="exampleFormControlInput1" class="form-label text-light">Nombre</label>
+      <input type="email" class="form-control" id="exampleFormControlInput1" >
+    </div>
+    <div class="mb-2 ">
+      <label for="exampleFormControlTextarea1" class="form-label text-light">Mensaje</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+    <button type="submit" class="btn btn-outline-primary mb-3">Confirm identity</button>
+  </form>
+</div>
+
+<div class="container-fluid bg-fondo-oscuro d-flex justify-content-center">
+  <i class="fa-brands fa-github text-light"></i>
+  <i class="fa-regular fa-user"></i>
+  <a href="/assets/CV.pdf" download="CV.pdf" target="_blank">CV</a>
 </div>

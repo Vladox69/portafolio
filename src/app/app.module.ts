@@ -16,7 +16,7 @@ import { TarjetaComponentComponent } from './componentes/tarjeta-component/tarje
     BrowserModule,
     AppRoutingModule,
     NgbModule
-  ],
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
