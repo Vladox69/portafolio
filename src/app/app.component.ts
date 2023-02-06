@@ -12,13 +12,13 @@ export class AppComponent {
     {
       titulo:'Reportes Intranet',
       tecnologias:['Angular','Spring','Oracle'],
-      imagen:'/assets/hero.jpg',
+      imagen:'/assets/intranet2.jpeg',
       id:0
     },
     {
       titulo:'Sistema de gestión ARCERNNR',
       tecnologias:['Angular','Java','Oracle'],
-      imagen:'/assets/hero.jpg',
+      imagen:'/assets/sisdat4.jpeg',
       id:1
     },
     {
